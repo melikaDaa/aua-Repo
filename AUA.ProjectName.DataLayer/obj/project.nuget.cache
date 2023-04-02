@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y6+2cRTRQGRaBOJkDEbSkInIIkzL5KufU2EGzCM3PGRNX1SI/rUmzYO1TTTFf20x1LpUkdNWQaxaomngyLvJHA==",
+  "dgSpecHash": "kEM8XuqN0V5gjfG7lj5VODZyooP5oTDgbBcfCjuHzHWjAj/oe5eXmsjh4VJnWn9xq5jyFZyetLYtLmRDXR2FwQ==",
   "success": true,
-  "projectFilePath": "D:\\New folder\\aua\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.DataLayer\\AUA.ProjectName.DataLayer.csproj",
+  "projectFilePath": "D:\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.DataLayer\\AUA.ProjectName.DataLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\europe stock\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\europe stock\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tUDxuhTo/pwIyzwxbJi64qrglOkiVBw07/K0t7CvZfEPu3EYopsWY1gBgHT2gj/jv29aAh7ns/oBZgJRxgwa4A==",
+  "dgSpecHash": "C1veOgSur2t2E5tyqaN+d+GlDq2qoF7oH6Wx64P4fFMsg0PqKaCss1foD/D4VJL1BBxhDkyDbpP/gNycbOCt1Q==",
   "success": true,
-  "projectFilePath": "D:\\New folder\\aua\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.Services\\AUA.ProjectName.Services.csproj",
+  "projectFilePath": "D:\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.Services\\AUA.ProjectName.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\europe stock\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\europe stock\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

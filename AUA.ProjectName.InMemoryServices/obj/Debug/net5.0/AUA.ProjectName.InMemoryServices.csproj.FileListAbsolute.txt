@@ -124,3 +124,24 @@ D:\New folder\aua\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemor
 D:\New folder\aua\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\obj\Debug\net5.0\AUA.ProjectName.InMemoryServices.dll
 D:\New folder\aua\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\obj\Debug\net5.0\ref\AUA.ProjectName.InMemoryServices.dll
 D:\New folder\aua\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\obj\Debug\net5.0\AUA.ProjectName.InMemoryServices.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\bin\Debug\net5.0\AUA.ProjectName.InMemoryServices.deps.json
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\bin\Debug\net5.0\AUA.ProjectName.InMemoryServices.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\bin\Debug\net5.0\ref\AUA.ProjectName.InMemoryServices.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\bin\Debug\net5.0\AUA.ProjectName.InMemoryServices.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\bin\Debug\net5.0\AUA.ProjectName.Common.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\bin\Debug\net5.0\AUA.ProjectName.DomainEntities.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\bin\Debug\net5.0\AUA.ProjectName.Models.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\bin\Debug\net5.0\AUA.Mapping.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\bin\Debug\net5.0\AUA.ProjectName.Models.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\bin\Debug\net5.0\AUA.ProjectName.Common.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\bin\Debug\net5.0\AUA.ProjectName.DomainEntities.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\bin\Debug\net5.0\AUA.Mapping.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\obj\Debug\net5.0\AUA.ProjectName.InMemoryServices.csproj.AssemblyReference.cache
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\obj\Debug\net5.0\AUA.ProjectName.InMemoryServices.GeneratedMSBuildEditorConfig.editorconfig
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\obj\Debug\net5.0\AUA.ProjectName.InMemoryServices.AssemblyInfoInputs.cache
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\obj\Debug\net5.0\AUA.ProjectName.InMemoryServices.AssemblyInfo.cs
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\obj\Debug\net5.0\AUA.ProjectName.InMemoryServices.csproj.CoreCompileInputs.cache
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\obj\Debug\net5.0\AUA.ProjectName.InMemoryServices.csproj.CopyComplete
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\obj\Debug\net5.0\AUA.ProjectName.InMemoryServices.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\obj\Debug\net5.0\ref\AUA.ProjectName.InMemoryServices.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.InMemoryServices\obj\Debug\net5.0\AUA.ProjectName.InMemoryServices.pdb

@@ -7862,11 +7862,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\New folder\\aua\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.WebApi\\AUA.ProjectName.WebApi.csproj",
+      "projectUniqueName": "D:\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.WebApi\\AUA.ProjectName.WebApi.csproj",
       "projectName": "AUA.ProjectName.WebApi",
-      "projectPath": "D:\\New folder\\aua\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.WebApi\\AUA.ProjectName.WebApi.csproj",
+      "projectPath": "D:\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.WebApi\\AUA.ProjectName.WebApi.csproj",
       "packagesPath": "C:\\Users\\europe stock\\.nuget\\packages\\",
-      "outputPath": "D:\\New folder\\aua\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.WebApi\\obj\\",
+      "outputPath": "D:\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -7887,8 +7887,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\New folder\\aua\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.ValidationServices\\AUA.ProjectName.ValidationServices.csproj": {
-              "projectPath": "D:\\New folder\\aua\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.ValidationServices\\AUA.ProjectName.ValidationServices.csproj"
+            "D:\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.ValidationServices\\AUA.ProjectName.ValidationServices.csproj": {
+              "projectPath": "D:\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.ValidationServices\\AUA.ProjectName.ValidationServices.csproj"
             }
           }
         }

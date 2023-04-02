@@ -112,3 +112,22 @@ D:\New folder\aua\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\
 D:\New folder\aua\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\obj\Debug\net5.0\AUA.ProjectName.Models.dll
 D:\New folder\aua\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\obj\Debug\net5.0\ref\AUA.ProjectName.Models.dll
 D:\New folder\aua\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\obj\Debug\net5.0\AUA.ProjectName.Models.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\bin\Debug\net5.0\AUA.ProjectName.Models.deps.json
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\bin\Debug\net5.0\AUA.ProjectName.Models.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\bin\Debug\net5.0\ref\AUA.ProjectName.Models.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\bin\Debug\net5.0\AUA.ProjectName.Models.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\bin\Debug\net5.0\AUA.Mapping.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\bin\Debug\net5.0\AUA.ProjectName.Common.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\bin\Debug\net5.0\AUA.ProjectName.DomainEntities.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\bin\Debug\net5.0\AUA.ProjectName.DomainEntities.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\bin\Debug\net5.0\AUA.ProjectName.Common.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\bin\Debug\net5.0\AUA.Mapping.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\obj\Debug\net5.0\AUA.ProjectName.Models.csproj.AssemblyReference.cache
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\obj\Debug\net5.0\AUA.ProjectName.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\obj\Debug\net5.0\AUA.ProjectName.Models.AssemblyInfoInputs.cache
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\obj\Debug\net5.0\AUA.ProjectName.Models.AssemblyInfo.cs
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\obj\Debug\net5.0\AUA.ProjectName.Models.csproj.CoreCompileInputs.cache
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\obj\Debug\net5.0\AUA.ProjectName.Models.csproj.CopyComplete
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\obj\Debug\net5.0\AUA.ProjectName.Models.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\obj\Debug\net5.0\ref\AUA.ProjectName.Models.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Models\obj\Debug\net5.0\AUA.ProjectName.Models.pdb

@@ -172,3 +172,32 @@ D:\New folder\aua\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Service
 D:\New folder\aua\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\obj\Debug\net5.0\AUA.ProjectName.Services.dll
 D:\New folder\aua\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\obj\Debug\net5.0\ref\AUA.ProjectName.Services.dll
 D:\New folder\aua\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\obj\Debug\net5.0\AUA.ProjectName.Services.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\AUA.ProjectName.Services.deps.json
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\AUA.ProjectName.Services.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\ref\AUA.ProjectName.Services.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\AUA.ProjectName.Services.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\AUA.Mapping.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\AUA.ProjectName.Common.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\AUA.ProjectName.DataLayer.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\AUA.ProjectName.DomainEntities.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\AUA.ProjectName.InMemoryServices.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\AUA.ProjectName.ManualMapping.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\AUA.ProjectName.Models.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\AUA.ServiceInfrastructure.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\AUA.ProjectName.DataLayer.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\AUA.ProjectName.InMemoryServices.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\AUA.ProjectName.ManualMapping.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\AUA.ProjectName.Common.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\AUA.ProjectName.DomainEntities.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\AUA.ProjectName.Models.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\AUA.Mapping.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\bin\Debug\net5.0\AUA.ServiceInfrastructure.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\obj\Debug\net5.0\AUA.ProjectName.Services.csproj.AssemblyReference.cache
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\obj\Debug\net5.0\AUA.ProjectName.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\obj\Debug\net5.0\AUA.ProjectName.Services.AssemblyInfoInputs.cache
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\obj\Debug\net5.0\AUA.ProjectName.Services.AssemblyInfo.cs
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\obj\Debug\net5.0\AUA.ProjectName.Services.csproj.CoreCompileInputs.cache
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\obj\Debug\net5.0\AUA.ProjectName.Services.csproj.CopyComplete
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\obj\Debug\net5.0\AUA.ProjectName.Services.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\obj\Debug\net5.0\ref\AUA.ProjectName.Services.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Services\obj\Debug\net5.0\AUA.ProjectName.Services.pdb

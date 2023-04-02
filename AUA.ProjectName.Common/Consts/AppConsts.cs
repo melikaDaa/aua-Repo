@@ -10,6 +10,7 @@ namespace AUA.ProjectName.Common.Consts
         public const long SystemUserId = 1;
 
         public const string AppDllName = "AUA.ProjectName.WebApi";
+        public const string AppDlName = "AUA.ProjectName.Blazor";
 
         public const string ConnectionStrings = "ConnectionStrings";
 

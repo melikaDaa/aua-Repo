@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AUA.ProjectName.Common\AUA.ProjectName.Common.csproj" />
+    <ProjectReference Include="..\AUA.ProjectName.ManualMapping\AUA.ProjectName.ManualMapping.csproj" />
+    <ProjectReference Include="..\AUA.ProjectName.ValidationServices\AUA.ProjectName.ValidationServices.csproj" />
+    <ProjectReference Include="..\AUA.ProjectName.WebApi\AUA.ProjectName.WebApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AUA.Mapping">
+      <HintPath>..\AUA.ProjectName.WebApi\bin\Debug\net5.0\AUA.Mapping.dll</HintPath>
+    </Reference>
+    <Reference Include="AUA.ServiceInfrastructure">
+      <HintPath>..\AUA.ProjectName.WebApi\bin\Debug\net5.0\AUA.ServiceInfrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\AUA.ProjectName.WebApi\bin\Debug\net5.0\AutoMapper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

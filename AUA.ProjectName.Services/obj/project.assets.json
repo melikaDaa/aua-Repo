@@ -5702,11 +5702,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\New folder\\aua\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.Services\\AUA.ProjectName.Services.csproj",
+      "projectUniqueName": "D:\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.Services\\AUA.ProjectName.Services.csproj",
       "projectName": "AUA.ProjectName.Services",
-      "projectPath": "D:\\New folder\\aua\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.Services\\AUA.ProjectName.Services.csproj",
+      "projectPath": "D:\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.Services\\AUA.ProjectName.Services.csproj",
       "packagesPath": "C:\\Users\\europe stock\\.nuget\\packages\\",
-      "outputPath": "D:\\New folder\\aua\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.Services\\obj\\",
+      "outputPath": "D:\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -5727,14 +5727,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\New folder\\aua\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.DataLayer\\AUA.ProjectName.DataLayer.csproj": {
-              "projectPath": "D:\\New folder\\aua\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.DataLayer\\AUA.ProjectName.DataLayer.csproj"
+            "D:\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.DataLayer\\AUA.ProjectName.DataLayer.csproj": {
+              "projectPath": "D:\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.DataLayer\\AUA.ProjectName.DataLayer.csproj"
             },
-            "D:\\New folder\\aua\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.InMemoryServices\\AUA.ProjectName.InMemoryServices.csproj": {
-              "projectPath": "D:\\New folder\\aua\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.InMemoryServices\\AUA.ProjectName.InMemoryServices.csproj"
+            "D:\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.InMemoryServices\\AUA.ProjectName.InMemoryServices.csproj": {
+              "projectPath": "D:\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.InMemoryServices\\AUA.ProjectName.InMemoryServices.csproj"
             },
-            "D:\\New folder\\aua\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.ManualMapping\\AUA.ProjectName.ManualMapping.csproj": {
-              "projectPath": "D:\\New folder\\aua\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.ManualMapping\\AUA.ProjectName.ManualMapping.csproj"
+            "D:\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.ManualMapping\\AUA.ProjectName.ManualMapping.csproj": {
+              "projectPath": "D:\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.ManualMapping\\AUA.ProjectName.ManualMapping.csproj"
             }
           }
         }

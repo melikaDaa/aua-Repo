@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YYZoDuSe1wU3VMmI927AyHU3LZ2C7Jc7IxUZnAaDZahYPW8EnPtKzjVevc3R6JNWZVNr3dDtgZE+kwEpILzkSg==",
+  "dgSpecHash": "whqTPG7YwotY2rz0b0kxFtFZUQrwwHjExGV2X3KFwLI6sn0p7Q6vgxvaI6FH6YAmdV0HLgLhCz250rlCiwMn9Q==",
   "success": true,
-  "projectFilePath": "D:\\New folder\\aua\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.Common\\AUA.ProjectName.Common.csproj",
+  "projectFilePath": "D:\\AUA_V1.0_WebApiDotNet5\\AUA.ProjectName\\AUA.ProjectName.Common\\AUA.ProjectName.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\europe stock\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\europe stock\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",

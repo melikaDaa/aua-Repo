@@ -124,3 +124,24 @@ D:\New folder\aua\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualM
 D:\New folder\aua\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\obj\Debug\net5.0\AUA.ProjectName.ManualMapping.dll
 D:\New folder\aua\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\obj\Debug\net5.0\ref\AUA.ProjectName.ManualMapping.dll
 D:\New folder\aua\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\obj\Debug\net5.0\AUA.ProjectName.ManualMapping.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\bin\Debug\net5.0\AUA.ProjectName.ManualMapping.deps.json
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\bin\Debug\net5.0\AUA.ProjectName.ManualMapping.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\bin\Debug\net5.0\ref\AUA.ProjectName.ManualMapping.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\bin\Debug\net5.0\AUA.ProjectName.ManualMapping.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\bin\Debug\net5.0\AUA.ProjectName.Common.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\bin\Debug\net5.0\AUA.ProjectName.DomainEntities.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\bin\Debug\net5.0\AUA.ProjectName.Models.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\bin\Debug\net5.0\AUA.Mapping.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\bin\Debug\net5.0\AUA.ProjectName.Models.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\bin\Debug\net5.0\AUA.ProjectName.Common.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\bin\Debug\net5.0\AUA.ProjectName.DomainEntities.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\bin\Debug\net5.0\AUA.Mapping.pdb
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\obj\Debug\net5.0\AUA.ProjectName.ManualMapping.csproj.AssemblyReference.cache
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\obj\Debug\net5.0\AUA.ProjectName.ManualMapping.GeneratedMSBuildEditorConfig.editorconfig
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\obj\Debug\net5.0\AUA.ProjectName.ManualMapping.AssemblyInfoInputs.cache
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\obj\Debug\net5.0\AUA.ProjectName.ManualMapping.AssemblyInfo.cs
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\obj\Debug\net5.0\AUA.ProjectName.ManualMapping.csproj.CoreCompileInputs.cache
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\obj\Debug\net5.0\AUA.ProjectName.ManualMapping.csproj.CopyComplete
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\obj\Debug\net5.0\AUA.ProjectName.ManualMapping.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\obj\Debug\net5.0\ref\AUA.ProjectName.ManualMapping.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.ManualMapping\obj\Debug\net5.0\AUA.ProjectName.ManualMapping.pdb
