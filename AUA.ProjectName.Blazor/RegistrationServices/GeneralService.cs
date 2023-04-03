@@ -1,6 +1,7 @@
 ﻿using AUA.ProjectName.Services.GeneralService.Login.Contracts;
 using AUA.ProjectName.Services.GeneralService.Login.Services;
 using Microsoft.Extensions.DependencyInjection;
+using System.Net.Http;
 
 namespace AUA.ProjectName.Blazor.RegistrationServices
 
@@ -16,6 +17,7 @@ namespace AUA.ProjectName.Blazor.RegistrationServices
 
         private static void RegistrationAccessServices(this IServiceCollection services)
         {
+           
             services.AddScoped<ILoginService, LoginService>();
             services.AddScoped<IRefreshTokenService, RefreshTokenService>();
             services.AddScoped<IAccessTokenService, AccessTokenService>();

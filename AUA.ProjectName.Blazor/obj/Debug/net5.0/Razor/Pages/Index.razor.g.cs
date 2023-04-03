@@ -79,6 +79,27 @@ using AUA.ProjectName.Blazor.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Areas.Accounting.Controllers;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Models.EntitiesDto.Accounting;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.DomainEntities.Entities.Accounting;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {

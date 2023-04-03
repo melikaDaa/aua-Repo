@@ -1,0 +1,51 @@
+﻿@page "/Role/Index"
+@using System.Net.Http
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@inject IHttpClientFactory ClientFactory
+@inject HttpClient Http
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Active</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    @if (Roles == null)
+    {
+        <p>Loading</p>
+    }
+    else
+    {
+    @foreach (var element in Roles)
+    {
+        <tr>
+            <td>@element.Id</td>
+            <td>@element.Title</td>
+            <td>@element.Description</td>
+            <td>@element.IsActive</td>
+            <td>@element.RegistrationDate</td>
+        </tr>
+    }
+
+    }
+</table>
+
+
+@code{
+    public List<RoleDto> Roles;
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await Http.GetAsync("https://localhost:44388/api/Role/");
+        response.EnsureSuccessStatusCode();
+        Roles = await response.Content.ReadAsAsync<List<RoleDto>>();
+    }
+
+
+
+
+
+}

@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace AUA.ProjectName.Blazor
@@ -26,11 +27,21 @@ namespace AUA.ProjectName.Blazor
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHttpClient();
             services.Configuration();
         }
 
-        public void Configure(IApplicationBuilder app)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Error");
+            }
+
             app.UseExceptionHandler(AppConsts.ExceptionHandler);
             app.UseDeveloperExceptionPage();
 

@@ -71,7 +71,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Accounting", "Accounting", 
 		_Documents\Tables\Accounting\UserRoleAccess.docx = _Documents\Tables\Accounting\UserRoleAccess.docx
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AUA.ProjectName.Blazor", "AUA.ProjectName.Blazor\AUA.ProjectName.Blazor.csproj", "{89639F81-A241-4D6C-8767-BDDE8A2716AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AUA.ProjectName.Blazor", "AUA.ProjectName.Blazor\AUA.ProjectName.Blazor.csproj", "{89639F81-A241-4D6C-8767-BDDE8A2716AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

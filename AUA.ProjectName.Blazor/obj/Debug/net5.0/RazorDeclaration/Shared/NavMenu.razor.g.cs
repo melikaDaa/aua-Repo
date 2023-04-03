@@ -82,6 +82,27 @@ using AUA.ProjectName.Blazor.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Areas.Accounting.Controllers;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Models.EntitiesDto.Accounting;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.DomainEntities.Entities.Accounting;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -90,7 +111,7 @@ using AUA.ProjectName.Blazor.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Shared\NavMenu.razor"
+#line 38 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 
