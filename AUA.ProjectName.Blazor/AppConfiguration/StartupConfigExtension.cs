@@ -1,11 +1,14 @@
 ﻿using System;
+using System.Text;
 using AUA.ProjectName.Common.Consts;
 using AUA.ProjectName.WebApi.AppConfiguration;
 using AUA.ProjectName.WebApi.RegistrationServices;
 using AUA.ProjectName.WebApi.Utility;
 using AutoMapper;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
 namespace AUA.ProjectName.Blazor.AppConfiguration
@@ -36,6 +39,9 @@ namespace AUA.ProjectName.Blazor.AppConfiguration
             services
                 .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie();
+
+
+            
 
         }
 

@@ -84,14 +84,63 @@ using AUA.ProjectName.Blazor.Areas.Accounting.Controllers;
 #nullable disable
 #nullable restore
 #line 12 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
-using AUA.ProjectName.Blazor.Pages.Accounting.Role;
+using AUA.ProjectName.Models.EntitiesDto.Accounting;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 13 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
-using AUA.ProjectName.Models.EntitiesDto.Accounting;
+using AUA.ProjectName.DomainEntities.Entities.Accounting;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Pages.Accounting.Role;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Pages.Accounting.UsersAccess;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 16 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Controllers;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 17 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Models.BaseModel.BaseViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 18 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Models.ListModes.Accounting.UserAccessModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 19 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Models.ListModes.Accounting.AppUserModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 20 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Pages.Accounting.User;
 
 #line default
 #line hidden
@@ -126,31 +175,25 @@ using System.Text.Json.Serialization;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 26 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Pages\Accounting\Role\IndexRole.razor"
+#line 38 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Pages\Accounting\Role\IndexRole.razor"
       
-    public List<RoleDto> fakeDataList = new List<RoleDto>();
-    public string result { get; set; }
+    public List<RoleDto> Roles;
     protected override async Task OnInitializedAsync()
     {
-        var request = new HttpRequestMessage(HttpMethod.Get, "http://localhost:44388/api/Role/Get");
-        var client = ClientFactory.CreateClient();
-        var response = await client.SendAsync(request);
-
-        if (response.IsSuccessStatusCode)
-        {
-            await using var responseStream = await response.Content.ReadAsStreamAsync();
-            fakeDataList = await JsonSerializer.DeserializeAsync<List<RoleDto>>(responseStream);
-
-        }
-
-
-
+        var response = await Http.GetAsync("https://localhost:44388/api/Role/");
+        response.EnsureSuccessStatusCode();
+        Roles = await response.Content.ReadAsAsync<List<RoleDto>>();
     }
+
+
+
+
 
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IHttpClientFactory ClientFactory { get; set; }
     }
 }

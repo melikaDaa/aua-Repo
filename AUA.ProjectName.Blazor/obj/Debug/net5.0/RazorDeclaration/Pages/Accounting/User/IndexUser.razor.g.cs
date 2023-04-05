@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace AUA.ProjectName.Blazor.Pages
+namespace AUA.ProjectName.Blazor.Pages.Accounting.User
 {
     #line hidden
     using System;
@@ -97,28 +97,77 @@ using AUA.ProjectName.DomainEntities.Entities.Accounting;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Pages\IndexRole.razor"
+#line 14 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Pages.Accounting.Role;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Pages.Accounting.UsersAccess;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 16 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Controllers;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 17 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Models.BaseModel.BaseViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 18 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Models.ListModes.Accounting.UserAccessModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 19 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Models.ListModes.Accounting.AppUserModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 20 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Pages.Accounting.User;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Pages\Accounting\User\IndexUser.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Pages\IndexRole.razor"
+#line 3 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Pages\Accounting\User\IndexUser.razor"
 using System.Text.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Pages\IndexRole.razor"
+#line 4 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Pages\Accounting\User\IndexUser.razor"
 using System.Text.Json.Serialization;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/Role/Index")]
-    public partial class IndexRole : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/User/Index")]
+    public partial class IndexUser : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -126,16 +175,15 @@ using System.Text.Json.Serialization;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 38 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Pages\IndexRole.razor"
+#line 40 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Pages\Accounting\User\IndexUser.razor"
       
-    public List<RoleDto> Roles;
+    public List<AppUserDto> users;
     protected override async Task OnInitializedAsync()
     {
-        var response = await Http.GetAsync("https://localhost:44388/api/Role/");
+        var response = await Http.GetAsync("https://localhost:44388/api/AppUSer/");
         response.EnsureSuccessStatusCode();
-        Roles = await response.Content.ReadAsAsync<List<RoleDto>>();
+        users = await response.Content.ReadAsAsync<List<AppUserDto>>();
     }
-
 
 
 

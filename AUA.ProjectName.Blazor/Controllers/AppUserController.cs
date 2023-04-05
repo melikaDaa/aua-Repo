@@ -14,10 +14,9 @@ using AUA.ProjectName.WebApi.Utility.ApiAuthorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace AUA.ProjectName.Blazor.Areas.Accounting.Controllers
+namespace AUA.ProjectName.Blazor.Controllers
 {
 
-    [WebApiAuthorize(EUserAccess.AppUser)]
     public class AppUserController : BaseApiController
     {
         private readonly IAppUserService _appUserService;
@@ -60,15 +59,14 @@ namespace AUA.ProjectName.Blazor.Areas.Accounting.Controllers
         }
 
         [HttpGet]
-        public async Task<ResultModel<List<AppUserDto>>> ListAsync()
+        public async Task<ActionResult<List<AppUserDto>>> ListAsync()
         {
-            var result = await _appUserService.GetAllDto()
-                                              .AsNoTracking()
-                                              .ToListAsync();
+            var result = await _appUserListService.GetAllDto()
+                                           .AsNoTracking()
+                                           .ToListAsync();
 
-            return CreateSuccessResult(result);
+            return Ok(result);
         }
-
         [HttpPost]
         public async Task<ResultModel<long>> InsertAsync(AppUserInsertVm appUserVm)
         {
@@ -187,16 +185,7 @@ namespace AUA.ProjectName.Blazor.Areas.Accounting.Controllers
             return CreateResult(result);
         }
 
-        [HttpGet]
-        [WebApiAuthorize(EUserAccess.ResetPassword)]
-        public async Task<ResultModel<EResultStatus>> ResetPasswordAsync(long userId)
-        {
-            var result = await _appUserService
-                                .ChangePasswordAsync(AppSetting.DefaultPassword, userId);
-
-
-            return CreateResult(result);
-        }
+ 
 
       
     }

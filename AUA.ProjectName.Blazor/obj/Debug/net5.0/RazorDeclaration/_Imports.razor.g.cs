@@ -103,6 +103,55 @@ using AUA.ProjectName.DomainEntities.Entities.Accounting;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 14 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Pages.Accounting.Role;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Pages.Accounting.UsersAccess;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 16 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Controllers;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 17 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Models.BaseModel.BaseViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 18 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Models.ListModes.Accounting.UserAccessModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 19 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Models.ListModes.Accounting.AppUserModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 20 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Pages.Accounting.User;
+
+#line default
+#line hidden
+#nullable disable
     public partial class _Imports : System.Object
     {
         #pragma warning disable 1998

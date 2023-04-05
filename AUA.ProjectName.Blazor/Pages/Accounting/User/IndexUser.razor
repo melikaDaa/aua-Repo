@@ -1,0 +1,52 @@
+﻿@page "/User/Index"
+@using System.Net.Http
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@inject IHttpClientFactory ClientFactory
+@inject HttpClient Http
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> id</th>
+            <th>FullName</th>
+            <th>USerName</th>
+            <th>phone</th>
+            <th>Email</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    @if (users == null)
+    {
+        <p>Loading</p>
+    }
+    else
+    {
+        @foreach (var element in users)
+        {
+            <tr>
+                <td>@element.Id</td>
+                <td>@element.FullName</td>
+                <td>@element.UserName</td>
+                <td>@element.Phone</td>
+                <td>@element.Email</td>
+                <td>@element.RegistrationDatePersian</td>
+            </tr>
+        }
+
+    }
+</table>
+
+
+@code{
+    public List<AppUserDto> users;
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await Http.GetAsync("https://localhost:44388/api/AppUSer/");
+        response.EnsureSuccessStatusCode();
+        users = await response.Content.ReadAsAsync<List<AppUserDto>>();
+    }
+
+
+
+
+}

@@ -1,0 +1,24 @@
+﻿@page "/Login/Index"
+@using System.Net.Http
+@inject HttpClient http
+@inject NavigationManager navigationManager
+<input type="text" @bind="Username" />
+<input type="text" @bind="pass" />
+<button @onclick="Login">Login</button>
+
+@code{
+    public string Username { get; set; }
+    public string pass { get; set; }
+    private async Task Login()
+    {
+        var response = await http.PostAsJsonAsync("api/UserAccount", new { Username, pass });
+        if (response.IsSuccessStatusCode)
+        {
+            navigationManager.NavigateTo("/Index");
+        }
+        else
+        {
+
+        }
+    }
+} 

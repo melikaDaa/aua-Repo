@@ -31,6 +31,8 @@ namespace AUA.ProjectName.Blazor.AppConfiguration
 
             app.UseAuthorization();
 
+            app.UseAuthentication();
+
         }
 
         private static void UseCors(this IApplicationBuilder app)

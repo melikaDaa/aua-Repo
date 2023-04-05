@@ -19,6 +19,7 @@ namespace AUA.ProjectName.Models.EntitiesDto.Accounting
 
         public string Email { get; set; }
 
+        public string FullName => FirstName + " " + LastName;
         public ICollection<UserRoleDto> UserRoles { get; set; }
     }
 }

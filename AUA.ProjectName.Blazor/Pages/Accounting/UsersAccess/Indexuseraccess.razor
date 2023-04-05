@@ -1,0 +1,52 @@
+﻿@page "/UserAccess/Index"
+@using System.Net.Http
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@inject IHttpClientFactory ClientFactory
+@inject HttpClient Http
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> id</th>
+            <th>Title</th>
+            <th>Url</th>
+            <th>Description</th>
+            <th>IsIndirect</th>
+        </tr>
+    </thead>
+    @if (users == null)
+    {
+        <p>Loading</p>
+    }
+    else
+    {
+        @foreach (var element in users)
+        {
+            <tr>
+                <td>@element.AccessCode</td>
+                <td>@element.Title</td>
+                <td>@element.Url</td>
+                <td>@element.PageDescription</td>
+                <td>@element.IsIndirect</td>
+            </tr>
+        }
+
+    }
+</table>
+
+
+@code{
+    
+    public List<UserAccessListDto> users;
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await Http.GetAsync("https://localhost:44388/api/UserAccess/");
+        response.EnsureSuccessStatusCode();
+        users = await response.Content.ReadAsAsync<List<UserAccessListDto>>();
+    }
+
+
+
+
+
+}

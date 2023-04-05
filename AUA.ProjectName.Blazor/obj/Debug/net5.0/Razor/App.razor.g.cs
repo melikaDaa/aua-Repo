@@ -100,6 +100,55 @@ using AUA.ProjectName.DomainEntities.Entities.Accounting;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 14 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Pages.Accounting.Role;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Pages.Accounting.UsersAccess;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 16 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Controllers;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 17 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Models.BaseModel.BaseViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 18 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Models.ListModes.Accounting.UserAccessModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 19 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Models.ListModes.Accounting.AppUserModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 20 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Pages.Accounting.User;
+
+#line default
+#line hidden
+#nullable disable
     public partial class App : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -115,7 +164,7 @@ using AUA.ProjectName.DomainEntities.Entities.Accounting;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(2, "PreferExactMatches", 
+            __builder.AddAttribute(2, "PreferExactMatches", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 1 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\App.razor"
                                                                      true
@@ -123,7 +172,7 @@ using AUA.ProjectName.DomainEntities.Entities.Accounting;
 #line default
 #line hidden
 #nullable disable
-            );
+            ));
             __builder.AddAttribute(3, "Found", (Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.RouteData>)((routeData) => (__builder2) => {
                 __builder2.OpenComponent<Microsoft.AspNetCore.Components.RouteView>(4);
                 __builder2.AddAttribute(5, "RouteData", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.RouteData>(
