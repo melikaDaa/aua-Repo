@@ -1,5 +1,6 @@
 ﻿using AUA.ProjectName.Blazor.AuthProviders;
 using AUA.ProjectName.Blazor.Helpers;
+using AUA.ProjectName.Blazor.Utility.Repositories;
 using AUA.ProjectName.Services.GeneralService.Login.Contracts;
 using AUA.ProjectName.Services.GeneralService.Login.Services;
 using Blazored.LocalStorage;
@@ -17,6 +18,7 @@ namespace AUA.ProjectName.Blazor.RegistrationServices
         {
 
             services.RegistrationAccessServices();
+            services.RegistrationBlazorServices();
 
         }
 
@@ -28,15 +30,23 @@ namespace AUA.ProjectName.Blazor.RegistrationServices
             services.AddScoped<IAccessTokenService, AccessTokenService>();
             services.AddScoped<ILogoutService, LogoutService>();
 
-            services.AddScoped<IAuthenticationService, AuthenticationService>();
+            //services.AddScoped<IAuthenticationService, AuthenticationService>();
 
-            services.AddScoped<AuthenticationStateProvider, AuthStateProvider>();
-            services.AddScoped<IHttpService, HttpService>();
-            services.AddBlazoredLocalStorage();
-              services.AddAuthorizationCore();
+//            services.AddScoped<AuthenticationStateProvider, AuthStateProvider>();
+  //  
+    //        services.AddBlazoredLocalStorage();
+      //        services.AddAuthorizationCore();
         }
 
-    
 
+        public static void RegistrationBlazorServices(this IServiceCollection services)
+        {
+            services.AddHttpClient();
+            services.AddScoped<IHttpService, HttpService>();
+            services.AddScoped<IRoleRepository, RoleRepository>();
+            services.AddScoped<IAppUserRepository, AppUserRepository>();
+            services.AddScoped<IUserAccessRepository, UserAccessRepository>();
+        }
+
+        }
     }
-}

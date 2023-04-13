@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using AUA.ProjectName.Blazor.RegistrationServices;
 using AUA.ProjectName.Common.Consts;
 using AUA.ProjectName.WebApi.AppConfiguration;
 using AUA.ProjectName.WebApi.RegistrationServices;
@@ -19,7 +20,8 @@ namespace AUA.ProjectName.Blazor.AppConfiguration
         {
             services.AddAutoMapper(typeof(MappingProfile));
 
-            services.RegistrationServices();
+            services.RegistrationServicesBlazor();
+         
 
             services.CookieConfig();
 

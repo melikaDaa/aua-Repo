@@ -152,6 +152,20 @@ using AUA.ProjectName.Blazor.Pages.Accounting.User;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 21 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Utility.Repositories;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 22 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Helpers;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -160,7 +174,7 @@ using AUA.ProjectName.Blazor.Pages.Accounting.User;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 43 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Shared\NavMenu.razor"
+#line 34 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

@@ -4,7 +4,7 @@ namespace AUA.ProjectName.Blazor.RegistrationServices
 {
     public static class StartUpServices
     {
-        public static void RegistrationServices(this IServiceCollection services)
+        public static void RegistrationServicesBlazor(this IServiceCollection services)
         {
             services.RegistrationValidationService();
 
@@ -22,6 +22,7 @@ namespace AUA.ProjectName.Blazor.RegistrationServices
 
             services.RegistrationListService();
 
+            services.RegistrationBlazorServices();
         }
 
 

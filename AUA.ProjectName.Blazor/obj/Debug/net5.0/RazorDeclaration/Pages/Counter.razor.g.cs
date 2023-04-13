@@ -152,6 +152,20 @@ using AUA.ProjectName.Blazor.Pages.Accounting.User;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 21 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Utility.Repositories;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 22 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Helpers;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
     public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
     {

@@ -13,6 +13,13 @@ namespace AUA.ProjectName.Blazor.Pages.Accounting.Role
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
+#line 1 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using System.Net.Http;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
@@ -146,22 +153,15 @@ using AUA.ProjectName.Blazor.Pages.Accounting.User;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Pages\Accounting\Role\IndexRole.razor"
-using System.Net.Http;
+#line 21 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Utility.Repositories;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Pages\Accounting\Role\IndexRole.razor"
-using System.Text.Json;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 4 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Pages\Accounting\Role\IndexRole.razor"
-using System.Text.Json.Serialization;
+#line 22 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Helpers;
 
 #line default
 #line hidden
@@ -175,26 +175,35 @@ using System.Text.Json.Serialization;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 38 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Pages\Accounting\Role\IndexRole.razor"
-      
-    public List<RoleDto> Roles;
-    protected override async Task OnInitializedAsync()
-    {
-        var response = await Http.GetAsync("https://localhost:44388/api/Role/");
-        response.EnsureSuccessStatusCode();
-        Roles = await response.Content.ReadAsAsync<List<RoleDto>>();
-    }
+#line 50 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Pages\Accounting\Role\IndexRole.razor"
+          
+        public List<RoleDto> Roles;
+
+        protected override async Task OnInitializedAsync()
+        {
+            try
+            {
+                Roles = await RoleRepo.GetGenres();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+
+        }
 
 
 
 
 
+    
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IHttpClientFactory ClientFactory { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IHttpService http { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IRoleRepository RoleRepo { get; set; }
     }
 }
 #pragma warning restore 1591

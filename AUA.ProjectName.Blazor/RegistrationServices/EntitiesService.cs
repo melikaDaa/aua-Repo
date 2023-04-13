@@ -1,4 +1,6 @@
-﻿ using AUA.ProjectName.DataLayer.AppContext.EntityFrameworkContext;
+﻿using AUA.ProjectName.Blazor.Helpers;
+using AUA.ProjectName.Blazor.Utility.Repositories;
+using AUA.ProjectName.DataLayer.AppContext.EntityFrameworkContext;
 using AUA.ProjectName.Services.EntitiesService.Accounting.Contracts;
 using AUA.ProjectName.Services.EntitiesService.Accounting.Services;
 using Microsoft.Extensions.DependencyInjection;
@@ -33,6 +35,7 @@ namespace AUA.ProjectName.Blazor.RegistrationServices
             services.AddScoped<IUserRoleService, UserRoleService>();
             services.AddScoped<IActiveAccessTokenService, ActiveAccessTokenService>();
             services.AddScoped<IRoleService, RoleService>();
+           
         }
 
 
