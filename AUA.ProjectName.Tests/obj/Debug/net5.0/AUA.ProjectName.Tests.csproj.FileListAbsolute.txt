@@ -588,7 +588,6 @@ D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Tests\bin\Debug\net5.0
 D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Tests\bin\Debug\net5.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Tests\bin\Debug\net5.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Tests\bin\Debug\net5.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Tests\obj\Debug\net5.0\AUA.ProjectName.Tests.csproj.AssemblyReference.cache
 D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Tests\obj\Debug\net5.0\AUA.ProjectName.Tests.GeneratedMSBuildEditorConfig.editorconfig
 D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Tests\obj\Debug\net5.0\AUA.ProjectName.Tests.AssemblyInfoInputs.cache
 D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Tests\obj\Debug\net5.0\AUA.ProjectName.Tests.AssemblyInfo.cs
@@ -598,3 +597,4 @@ D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Tests\obj\Debug\net5.0
 D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Tests\obj\Debug\net5.0\ref\AUA.ProjectName.Tests.dll
 D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Tests\obj\Debug\net5.0\AUA.ProjectName.Tests.pdb
 D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Tests\obj\Debug\net5.0\AUA.ProjectName.Tests.genruntimeconfig.cache
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Tests\obj\Debug\net5.0\AUA.ProjectName.Tests.csproj.AssemblyReference.cache

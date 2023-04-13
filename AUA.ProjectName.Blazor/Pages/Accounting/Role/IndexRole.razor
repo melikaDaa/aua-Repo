@@ -1,51 +1,71 @@
 ﻿@page "/Role/Index"
-@using System.Net.Http
-@using System.Text.Json
-@using System.Text.Json.Serialization
-@inject IHttpClientFactory ClientFactory
-@inject HttpClient Http
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th> id</th>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Active</th>
-            <th>Date</th>
-        </tr>
-    </thead>
-    @if (Roles == null)
-    {
-        <p>Loading</p>
-    }
-    else
-    {
-    @foreach (var element in Roles)
-    {
-        <tr>
-            <td>@element.Id</td>
-            <td>@element.Title</td>
-            <td>@element.Description</td>
-            <td>@element.IsActive</td>
-            <td>@element.RegistrationDate</td>
-        </tr>
-    }
+@inject IRoleRepository RoleRepo
+@inject IHttpService http
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card" id="##customers">
+                <div class="card-header bg-white">
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th> id</th>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Active</th>
+                                    <th>Date</th>
+                                    <th>Operation</th>
+                                </tr>
+                            </thead>
+                            @if (Roles == null)
+                            {
+                                <p>Loading</p>
+                            }
+                            else
+                            {
+                                @foreach (var element in Roles)
+                                {
+                        <tr>
+                            <td>@element.Id</td>
+                            <td>@element.Title</td>
+                            <td>@element.Description</td>
+                            <td>@element.IsActive</td>
+                            <td>@element.RegistrationDate</td>
+                            <td>
+                                <button class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">Delete</button>
+                                <button class="btn btn-info"  data-toggle="modal" data-target="#myModal">Edit</button>
+                            </td>
+                        </tr>
+                                }
+
+                            }
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @code{
+        public List<RoleDto> Roles;
+
+        protected override async Task OnInitializedAsync()
+        {
+            try
+            {
+                Roles = await RoleRepo.GetGenres();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+
+        }
+
+
+
+
 
     }
-</table>
-
-
-@code{
-    public List<RoleDto> Roles;
-    protected override async Task OnInitializedAsync()
-    {
-        var response = await Http.GetAsync("https://localhost:44388/api/Role/");
-        response.EnsureSuccessStatusCode();
-        Roles = await response.Content.ReadAsAsync<List<RoleDto>>();
-    }
-
-
-
-
-
-}

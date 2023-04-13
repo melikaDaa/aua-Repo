@@ -1,5 +1,7 @@
 
 using AUA.ProjectName.Blazor.AppConfiguration;
+using AUA.ProjectName.Blazor.Helpers;
+using AUA.ProjectName.Blazor.Utility.Repositories;
 using AUA.ProjectName.Common.Consts;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -30,7 +32,8 @@ namespace AUA.ProjectName.Blazor
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddHttpClient();
+     
+
             services.Configuration();
 
          

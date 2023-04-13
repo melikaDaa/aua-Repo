@@ -1,52 +1,69 @@
 ﻿@page "/User/Index"
-@using System.Net.Http
-@using System.Text.Json
-@using System.Text.Json.Serialization
-@inject IHttpClientFactory ClientFactory
-@inject HttpClient Http
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th> id</th>
-            <th>FullName</th>
-            <th>USerName</th>
-            <th>phone</th>
-            <th>Email</th>
-            <th>Date</th>
-        </tr>
-    </thead>
-    @if (users == null)
-    {
-        <p>Loading</p>
-    }
-    else
-    {
-        @foreach (var element in users)
+@inject IAppUserRepository UserRepo
+@inject IHttpService http
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card" id="##customers">
+                <div class="card-header bg-white">
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+
+                                    <th>FullName</th>
+                                    <th>USerName</th>
+                                    <th>phone</th>
+                                    <th>Email</th>
+                                    <th>Date</th>
+                                    <th>Operation</th>
+                                </tr>
+                            </thead>
+                            @if (users == null)
+                            {
+                                <p>Loading</p>
+                            }
+                            else
+                            {
+                                @foreach (var element in users)
+                                {
+                        <tr>
+                            <td>@element.FullName</td>
+                            <td>@element.UserName</td>
+                            <td>@element.Phone</td>
+                            <td>@element.Email</td>
+                            <td>@element.RegistrationDate</td>
+                            <td>
+                                <button class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">Delete</button>
+                                <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Edit</button>
+                            </td>
+                        </tr>
+                                }
+
+                            }
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @code{
+        public List<AppUserDto> users;
+        protected override async Task OnInitializedAsync()
         {
-            <tr>
-                <td>@element.Id</td>
-                <td>@element.FullName</td>
-                <td>@element.UserName</td>
-                <td>@element.Phone</td>
-                <td>@element.Email</td>
-                <td>@element.RegistrationDatePersian</td>
-            </tr>
+            try
+            {
+                users = await UserRepo.GetUsers();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+
         }
 
+
+
+
     }
-</table>
-
-
-@code{
-    public List<AppUserDto> users;
-    protected override async Task OnInitializedAsync()
-    {
-        var response = await Http.GetAsync("https://localhost:44388/api/AppUSer/");
-        response.EnsureSuccessStatusCode();
-        users = await response.Content.ReadAsAsync<List<AppUserDto>>();
-    }
-
-
-
-
-}

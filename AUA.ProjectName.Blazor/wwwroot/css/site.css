@@ -48,3 +48,65 @@ a, .btn-link {
         right: 0.75rem;
         top: 0.5rem;
     }
+
+.card {
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    border-radius: 0;
+    background-color:white;
+}
+
+    .card h4 {
+        font-size: 17.6px;
+        font-size: 1.1rem;
+    }
+
+    .card .user-header .media img {
+        border: 5px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+    }
+
+    .card .card-header .card-actions button {
+        display: block;
+        float: left;
+        width: 50px;
+        padding: 12px 0;
+        padding: 0.75rem 0;
+        margin: 0 !important !important;
+        color: #fff;
+        outline: 0;
+        text-align: center;
+        background: transparent;
+        border: 0;
+        border-left: 1px solid rgba(120, 130, 140, 0.4);
+    }
+
+    .card .card-footer {
+        padding: 10.4px 20px;
+        padding: 0.65rem 1.25rem;
+        background-color: #f0f3f5;
+        border-top: 1px solid #c2cfd6;
+    }
+
+        .card .card-footer ul li {
+            display: table-cell;
+            padding: 0 16px;
+            padding: 0 1rem;
+            text-align: center;
+        }
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}

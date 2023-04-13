@@ -20,6 +20,7 @@ namespace AUA.ProjectName.Blazor.RegistrationServices
             services.AddScoped<IUserAccessListService, UserAccessListService>();
             services.AddScoped<IUserRoleListService, UserRoleListService>();
             services.AddScoped<IUserRoleAccessListService, UserRoleAccessListService>();
+
         }
     }
 }

@@ -4,7 +4,7 @@ namespace AUA.ProjectName.WebApi.RegistrationServices
 {
     public static class StartUpServices
     {
-        public static void RegistrationServices(this IServiceCollection services)
+       public static void RegistrationServices(this IServiceCollection services)
         {
             services.RegistrationValidationService();
 
@@ -21,7 +21,7 @@ namespace AUA.ProjectName.WebApi.RegistrationServices
             services.RegistrationInMemoryService();
 
             services.RegistrationListService();
-
+            
         }
 
 
