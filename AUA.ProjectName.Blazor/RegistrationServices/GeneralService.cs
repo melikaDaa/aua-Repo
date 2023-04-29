@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.Extensions.DependencyInjection;
 using System.Net.Http;
+using AUA.ProjectName.Blazor.Utility;
 
 namespace AUA.ProjectName.Blazor.RegistrationServices
 
@@ -30,23 +31,24 @@ namespace AUA.ProjectName.Blazor.RegistrationServices
             services.AddScoped<IAccessTokenService, AccessTokenService>();
             services.AddScoped<ILogoutService, LogoutService>();
 
-            //services.AddScoped<IAuthenticationService, AuthenticationService>();
-
-//            services.AddScoped<AuthenticationStateProvider, AuthStateProvider>();
-  //  
-    //        services.AddBlazoredLocalStorage();
-      //        services.AddAuthorizationCore();
         }
 
 
         public static void RegistrationBlazorServices(this IServiceCollection services)
         {
-            services.AddHttpClient();
-            services.AddScoped<IHttpService, HttpService>();
-            services.AddScoped<IRoleRepository, RoleRepository>();
-            services.AddScoped<IAppUserRepository, AppUserRepository>();
-            services.AddScoped<IUserAccessRepository, UserAccessRepository>();
+            {
+                services.AddHttpClient();
+                services.AddScoped<IHttpService, HttpService>();
+                services.AddScoped<IRoleRepository, RoleRepository>();
+                services.AddScoped<IAppUserRepository, AppUserRepository>();
+                services.AddScoped<IUserAccessRepository, UserAccessRepository>();
+                services.AddScoped<IAuthenticationServices, Utility.AuthenticationService>();
+                services.AddScoped<AuthenticationStateProvider, AuthStateProvider>();
+                services.AddScoped<ILocalStorageServices, LocalStorageService>();
+                services.AddBlazoredLocalStorage();
+                services.AddAuthorizationCore();
+                services.AddOptions();
+            }
         }
-
-        }
+    }
     }

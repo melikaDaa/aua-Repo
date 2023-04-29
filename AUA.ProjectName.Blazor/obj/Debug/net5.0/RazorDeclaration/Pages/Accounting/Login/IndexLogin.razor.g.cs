@@ -11,7 +11,13 @@ namespace AUA.ProjectName.Blazor.Pages.Accounting.Login
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Components;
+#nullable restore
+#line 1 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using System.Net.Http;
+
+#line default
+#line hidden
+#nullable disable
 #nullable restore
 #line 2 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
@@ -160,8 +166,50 @@ using AUA.ProjectName.Blazor.Helpers;
 #line hidden
 #nullable disable
 #nullable restore
+#line 23 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Utility;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 24 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Models.GeneralModels.LoginModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 25 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.AuthProviders;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 26 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Utility.ApiAuthorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 27 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Common.Enums;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 28 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using Blazored.LocalStorage;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Pages\Accounting\Login\IndexLogin.razor"
-using System.Net.Http;
+using Microsoft.AspNetCore.Components;
 
 #line default
 #line hidden
@@ -175,28 +223,28 @@ using System.Net.Http;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 9 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Pages\Accounting\Login\IndexLogin.razor"
+#line 33 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\Pages\Accounting\Login\IndexLogin.razor"
       
-    public string Username { get; set; }
-    public string pass { get; set; }
-    private async Task Login()
-    {
-        var response = await http.PostAsJsonAsync("api/UserAccount", new { Username, pass });
-        if (response.IsSuccessStatusCode)
-        {
-            navigationManager.NavigateTo("/Index");
-        }
-        else
-        {
+    LoginVm loginRequest = new LoginVm();
+    string error { get; set; }
 
-        }
+    public bool ShowAuthError { get; set; }
+
+    private async Task OnSubmit()
+    {
+
+        var result = await authStateProvider.Login(loginRequest);
+       
+        navigationManager.NavigateTo("/");
+        
+
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IAuthenticationServices authStateProvider { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigationManager { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient http { get; set; }
     }
 }
 #pragma warning restore 1591

@@ -163,6 +163,48 @@ using AUA.ProjectName.Blazor.Helpers;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 23 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Utility;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 24 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Models.GeneralModels.LoginModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 25 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.AuthProviders;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 26 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Blazor.Utility.ApiAuthorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 27 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using AUA.ProjectName.Common.Enums;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 28 "D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\_Imports.razor"
+using Blazored.LocalStorage;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/Role/Index")]
     public partial class IndexRole : Microsoft.AspNetCore.Components.ComponentBase
     {

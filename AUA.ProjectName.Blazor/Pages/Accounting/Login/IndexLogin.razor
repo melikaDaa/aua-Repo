@@ -1,24 +1,48 @@
 ﻿@page "/Login/Index"
-@using System.Net.Http
-@inject HttpClient http
+@using Microsoft.AspNetCore.Components
+
 @inject NavigationManager navigationManager
-<input type="text" @bind="Username" />
-<input type="text" @bind="pass" />
-<button @onclick="Login">Login</button>
+@inject IAuthenticationServices authStateProvider
+
+<h1 class="h2 font-weight-normal login-title">
+    Login
+</h1>
+
+<EditForm class="form-signin w-75" OnValidSubmit="OnSubmit" Model="loginRequest">
+    <DataAnnotationsValidator />
+
+    <label for="inputUsername" class="sr-only">User Name</label>
+    <InputText id="inputUsername" class="form-control" @bind-Value="loginRequest.UserName" autofocus placeholder="Username" />
+    <ValidationMessage For="@(() => loginRequest.UserName)" />
+
+    <label for="inputPassword" class="sr-only">Password</label>
+    <InputText type="password" id="inputPassword" class="form-control" placeholder="Password" @bind-Value="loginRequest.Password" />
+    <ValidationMessage For="@(() => loginRequest.Password)" />
+
+
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Login in</button>
+
+    <label class="text-danger">@error</label>
+
+    <NavLink href="register">
+        <h6 class="font-weight-normal text-center">Create account</h6>
+    </NavLink>
+</EditForm>
 
 @code{
-    public string Username { get; set; }
-    public string pass { get; set; }
-    private async Task Login()
-    {
-        var response = await http.PostAsJsonAsync("api/UserAccount", new { Username, pass });
-        if (response.IsSuccessStatusCode)
-        {
-            navigationManager.NavigateTo("/Index");
-        }
-        else
-        {
+    LoginVm loginRequest = new LoginVm();
+    string error { get; set; }
 
-        }
+    public bool ShowAuthError { get; set; }
+
+    private async Task OnSubmit()
+    {
+
+        var result = await authStateProvider.Login(loginRequest);
+       
+        navigationManager.NavigateTo("/");
+        
+
     }
-} 
+}

@@ -217,3 +217,5 @@ D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\bin\Debug\net5.
 D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\bin\Debug\net5.0\Microsoft.AspNetCore.Metadata.dll
 D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\bin\Debug\net5.0\Microsoft.JSInterop.dll
 D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\bin\Debug\net5.0\System.IO.Pipelines.dll
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\obj\Debug\net5.0\RazorDeclaration\Pages\Accounting\Login\Logout.razor.g.cs
+D:\AUA_V1.0_WebApiDotNet5\AUA.ProjectName\AUA.ProjectName.Blazor\obj\Debug\net5.0\Razor\Pages\Accounting\Login\Logout.razor.g.cs

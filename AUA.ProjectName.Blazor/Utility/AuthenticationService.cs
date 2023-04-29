@@ -1,9 +1,7 @@
-﻿using Blazored.LocalStorage;
-
+﻿using System;
+using System.Net;
+using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Components.Authorization;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
@@ -11,59 +9,68 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using AUA.ProjectName.Models.GeneralModels.LoginModels;
 using AUA.ProjectName.Blazor.AuthProviders;
+using AUA.ProjectName.Blazor.Helpers;
+using AUA.ProjectName.DomainEntities.Entities.Accounting;
+using AUA.ProjectName.Models.DataModels.LoginDataModels;
+using AUA.ProjectName.Models.GeneralModels.AccessTokenModels;
+using Newtonsoft.Json;
 
 namespace AUA.ProjectName.Blazor.Utility
 {
-    public class AuthenticationService : IAuthenticationService
+    public class AuthenticationService : IAuthenticationServices
     {
+
         private readonly HttpClient _client;
         private readonly JsonSerializerOptions _options;
         private readonly AuthenticationStateProvider _authStateProvider;
-        private readonly ILocalStorageService _localStorage;
-        public AuthenticationService(HttpClient client, AuthenticationStateProvider authStateProvider, ILocalStorageService localStorage)
+        private readonly ILocalStorageServices _localStorage;
+
+
+        public AuthenticationService(HttpClient client, AuthenticationStateProvider authStateProvider, ILocalStorageServices localStorage)
         {
             _client = client;
             _options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
             _authStateProvider = authStateProvider;
             _localStorage = localStorage;
         }
-        public async Task<LoginVm> RegisterUser(LoginVm userForRegistration)
+
+
+
+
+
+        public async Task<ActiveAccessToken> Login(LoginVm userForAuthentication)
         {
-            var content = JsonSerializer.Serialize(userForRegistration);
-            var bodyContent = new StringContent(content, Encoding.UTF8, "application/json");
-            var registrationResult = await _client.PostAsync("api/accounts/registration", bodyContent);
-            var registrationContent = await registrationResult.Content.ReadAsStringAsync();
-            if (!registrationResult.IsSuccessStatusCode)
-            {
-                var result = JsonSerializer.Deserialize<LoginVm>(registrationContent, _options);
-                return result;
-            }
-            return new LoginVm { };
+
+            string serializedUser = JsonConvert.SerializeObject(userForAuthentication);
+            var requestMessage = new HttpRequestMessage(HttpMethod.Post, "https://localhost:44388/api/UserAccount/Login");
+            requestMessage.Content = new StringContent(serializedUser);
+            requestMessage.Content.Headers.ContentType
+                = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
+
+            var response = await _client.SendAsync(requestMessage);
+            var responseStatusCode = response.StatusCode;
+            var responseBody = await response.Content.ReadAsStringAsync();
+
+            var returnedUser = JsonConvert.DeserializeObject<ActiveAccessToken>(responseBody);
+
+            await _localStorage.SetItem("authToken", returnedUser.AccessToken);
+
+
+            return returnedUser;
+
+
+
         }
 
-        public async Task<LoginResultVm> Login(LoginVm userForAuthentication)
-        {
-            var content = JsonSerializer.Serialize(userForAuthentication);
-            var bodyContent = new StringContent(content, Encoding.UTF8, "application/json");
-            var authResult = await _client.PostAsync("api/UserAccount/LoginAsync", bodyContent);
-            var authContent = await authResult.Content.ReadAsStringAsync();
-            var result = JsonSerializer.Deserialize<LoginResultVm>(authContent, _options);
-
-            if (!authResult.IsSuccessStatusCode)
-                return result;
-
-            await _localStorage.SetItemAsync("authToken", result.AccessToken);
-            ((AuthStateProvider)_authStateProvider).NotifyUserAuthentication(userForAuthentication.UserName);
-            _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", result.AccessToken);
-
-            return result;
-                }
 
         public async Task Logout()
         {
-            await _localStorage.RemoveItemAsync("authToken");
+            await _localStorage.RemoveItem("authToken");
             ((AuthStateProvider)_authStateProvider).NotifyUserLogout();
             _client.DefaultRequestHeaders.Authorization = null;
         }
+
     }
 }
+
+
